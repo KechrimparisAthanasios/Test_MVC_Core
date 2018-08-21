@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  core_mvc_test:
+    image: core_mvc_test
+    build:
+      context: .
+      dockerfile: Core_MVC_Test\Dockerfile
