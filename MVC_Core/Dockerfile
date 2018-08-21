@@ -5,10 +5,10 @@ EXPOSE 80
 FROM microsoft/aspnetcore-build:2.0-nanoserver-1709 AS build
 WORKDIR /src
 COPY *.sln ./
-COPY Core_mvc_test/Core_mvc_test.csproj Core_mvc_test/
+COPY MVC_Core/MVC_Core.csproj MVC_Core/
 RUN dotnet restore
 COPY . .
-WORKDIR /src/Core_mvc_test
+WORKDIR /src/MVC_Core
 RUN dotnet build -c Release -o /app
 
 FROM build AS publish
@@ -17,4 +17,4 @@ RUN dotnet publish -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Core_mvc_test.dll"]
+ENTRYPOINT ["dotnet", "MVC_Core.dll"]

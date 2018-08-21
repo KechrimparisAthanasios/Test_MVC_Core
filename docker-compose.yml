@@ -5,4 +5,4 @@ services:
     image: core_mvc_test
     build:
       context: .
-      dockerfile: Core_MVC_Test\Dockerfile
+      dockerfile: Core_mvc_test\Dockerfile

@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.0</ProjectVersion>
     <DockerTargetOS>Windows</DockerTargetOS>
-    <ProjectGuid>b4a1ea84-e834-43cb-9738-8fe24bb37393</ProjectGuid>
+    <ProjectGuid>308e0ee8-4e85-4d7d-aed6-5ccd08771dc7</ProjectGuid>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>http://{ServiceIPAddress}</DockerServiceUrl>
     <DockerServiceName>core_mvc_test</DockerServiceName>
